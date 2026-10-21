@@ -2882,7 +2882,7 @@
   <div class="view" id="view-atur-budget"><main>
     <div class="back-row" data-goto="belanja"><span data-icon="chevronLeft"></span><span>Kembali ke Belanja</span></div>
     <div class="section-title"><span data-icon="target"></span>Budget Bulanan per Kategori</div>
-    <div class="hint">Set limit belanja bulanan per kategori. Kosongkan atau isi 0 kalau kategori itu nggak mau dibatasi.</div>
+    <div class="hint">Set limit belanja bulanan per kategori. Kosongkan atau isi 0 kalau kategori itu nggak mau dibatasi.<br>🏷️ Di laporan dan grafik per jenis, pembelian kategori otomatis dihitung sebagai: <b>Medicine Spend</b> → Kesehatan, <b>Grooming Spend</b> → Perawatan Diri, <b>Grocery Spend</b> → Makanan dan Minuman.</div>
     <div class="card" id="set-budget"></div>
 
     <div class="section-title" style="margin-top:22px;"><span data-icon="tag"></span>Tambah Kategori Baru</div>
@@ -3748,7 +3748,7 @@ var ACCOUNT_CATEGORY = {
 /* "Logo" tiap rekening berupa badge inisial berwarna (bukan logo asli/berhak cipta).
    initial: teks yang muncul di badge, bg: warna latar badge. */
 var ACCOUNT_BADGE = {
-  "My XL":           { initial:"XL", bg:"#FFFFFF" },
+  "My XL":           { initial:"XL", bg:"#1B5BB5" },
   "Cash":            { initial:"Rp", bg:"#3D8B5F", icon:"cash" },
   "Dana":            { initial:"D",  bg:"#118EEA", img:"data:image/png;base64,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", shape:"square" },
   "OVO":             { initial:"O",  bg:"#373737", img:"data:image/png;base64,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", shape:"square" },
@@ -4341,15 +4341,20 @@ function applyStaticIcons(){
 }
 
 /* ============ FORMAT NOMINAL (pemisah ribuan) ============ */
-function formatMoneyValue(raw){
-  var digits = (raw===null||raw===undefined ? '' : String(raw)).replace(/\D/g,'');
+function formatMoneyValue(raw, allowNeg){
+  var str = (raw===null||raw===undefined ? '' : String(raw));
+  var neg = !!allowNeg && /^\s*[-\u2212]/.test(str);
+  var digits = str.replace(/\D/g,'');
   digits = digits.replace(/^0+(?=\d)/,'');
-  if(!digits) return '';
-  return digits.replace(/\B(?=(\d{3})+(?!\d))/g, isEN()?',':'.');
+  if(!digits) return neg ? '-' : '';
+  return (neg?'-':'') + digits.replace(/\B(?=(\d{3})+(?!\d))/g, isEN()?',':'.');
 }
-function parseMoneyValue(raw){
-  var digits = (raw===null||raw===undefined ? '' : String(raw)).replace(/\D/g,'');
-  return digits ? parseInt(digits,10) : 0;
+function parseMoneyValue(raw, allowNeg){
+  var str = (raw===null||raw===undefined ? '' : String(raw));
+  var digits = str.replace(/\D/g,'');
+  if(!digits) return 0;
+  var n = parseInt(digits,10);
+  return (allowNeg && /^\s*[-\u2212]/.test(str)) ? -n : n;
 }
 function attachMoneyFormatting(){
   document.body.addEventListener('input', function(ev){
@@ -4357,7 +4362,7 @@ function attachMoneyFormatting(){
     if(!el.classList || !el.classList.contains('money-input')) return;
     var start = el.selectionStart===null ? el.value.length : el.selectionStart;
     var digitsBeforeCaret = el.value.slice(0, start).replace(/\D/g,'').length;
-    var formatted = formatMoneyValue(el.value);
+    var formatted = formatMoneyValue(el.value, el.classList.contains('money-neg'));
     el.value = formatted;
     var pos = 0, count = 0;
     while(pos < formatted.length && count < digitsBeforeCaret){
@@ -4584,6 +4589,44 @@ function akunJenisKey(p){
   var ak = akunOfPengeluaran(p);
   return ak.charAt(0)==='1' ? ('Pembelian '+akunByKode(ak).n) : p.jenis;
 }
+/* Belanja Item kategori tertentu otomatis dihitung sebagai Jenis Pengeluaran tertentu di laporan/grafik per jenis.
+   Default: Medicine Spend -> Kesehatan, Grooming Spend -> Perawatan Diri, Grocery Spend -> Makanan dan Minuman. Kategori yang tidak terdaftar di sini tetap berdiri sendiri (Grooming, Bathroom, dst). */
+var BELANJA_KE_JENIS = { "Medicine Spend":"Kesehatan", "Grooming Spend":"Perawatan Diri", "Grocery Spend":"Makanan dan Minuman" };
+function jenisDariBelanja(b){
+  var j = b && BELANJA_KE_JENIS[b.kategori];
+  return (j && (DATA.jenisPengeluaran||[]).indexOf(j)>-1) ? j : null;
+}
+/* Pengeluaran + belanja yang dipetakan ke jenis (rekaman virtual, tidak disimpan & tidak mengubah saldo) */
+function pengeluaranPerJenis(){
+  var arr = DATA.pengeluaran.slice();
+  (DATA.belanja||[]).forEach(function(b){
+    var j = jenisDariBelanja(b); if(!j) return;
+    arr.push({ tanggal:b.tanggal, metode:b.metode, untuk:'Saya', jenis:j, jumlah:b.jumlah, ket:b.item, _dariBelanja:true });
+  });
+  return arr;
+}
+/* Kategori sebuah barang belanja (dari master item, atau dari catatan belanja terakhir) */
+function kategoriItemBelanja(nama){
+  var c = (DATA.itemBelanjaCustom||[]).filter(function(x){ return x.item===nama; })[0];
+  if(c && c.kategori) return c.kategori;
+  for(var i=DATA.belanja.length-1; i>=0; i--){ if(DATA.belanja[i].item===nama && DATA.belanja[i].kategori) return DATA.belanja[i].kategori; }
+  return null;
+}
+/* Basis BEBAN (dipakai prompt AI & insight): belanja item baru jadi beban saat stok DIPAKAI (HPP FIFO), bukan saat dibeli.
+   Jadi pemakaian stok dari kategori yang dipetakan (BELANJA_KE_JENIS) ditambahkan ke jenis pengeluaran tujuannya.
+   Pembelian stok TIDAK dihitung di sini supaya tidak dobel dengan "Belanja item per kategori" dan tidak melebihi Beban Operasional. */
+function bebanPerJenis(){
+  var arr = DATA.pengeluaran.slice(), ke = DATA.stokKeluar||[];
+  if(!ke.length) return arr;
+  var f = fifoHitung();
+  ke.forEach(function(k, i){
+    var c = f.cost[i]; if(!(c>0) || !k.tanggal) return;
+    var j = BELANJA_KE_JENIS[kategoriItemBelanja(k.item)];
+    if(!j || (DATA.jenisPengeluaran||[]).indexOf(j)===-1) return;
+    arr.push({ tanggal:k.tanggal, metode:'', untuk:'Saya', jenis:j, jumlah:Math.round(c), ket:k.item, _dariStok:true });
+  });
+  return arr;
+}
 function akunOfBelanja(b){ return (b && b.akun && akunByKode(b.akun)) ? b.akun : '1-400'; }
 /* ===== KALIMAT PENJELAS UNTUK PROMPT ANALISIS AI =====
    Setiap kalimat di bawah menerangkan CARA MENGHITUNG suatu angka kepada AI. Kalau metode hitungnya diubah,
@@ -4599,6 +4642,10 @@ var AI_METODE = {
   portofolioPokok: { id:'- Angka = modal pokok yang masih tertanam (bukan nilai pasar saat ini). Total: ', en:'- Figures = principal still invested (not current market value). Total: ' },
   budgetTerpakai: { id:'Catatan: "terpakai" hanya menghitung belanja yang memotong saldo (sama seperti perhitungan limit di aplikasi).', en:'Note: "used" counts only purchases that deduct from a balance (same as the limit calculation in the app).' },
   nonRutinPenuh: { id:'  Catatan: pemasukan non-rutin dari penjualan aset/stok dihitung sebesar HARGA JUAL PENUH, bukan untungnya, jadi rasio surplus di atas bisa terlalu optimistis. Untuk menilai kebiasaan menabung, pakai angka penghasilan rutin ini.', en:'  Note: non-regular income from selling assets/stock is counted at the FULL SALE PRICE, not the profit, so the surplus rate above can be too optimistic. To judge saving habits, use this regular-income figure.' },
+};
+AI_METODE.belanjaKeJenis = {
+  id:'  Catatan: pemakaian stok dari kategori belanja Medicine Spend, Grooming Spend, dan Grocery Spend otomatis dihitung ke jenis Kesehatan, Perawatan Diri, dan Makanan dan Minuman (nilai HPP saat stok dipakai, bukan saat dibeli). Karena itu angka jenis di atas sudah termasuk pemakaian stok tersebut, dan "Belanja item per kategori" di bawah tetap menampilkan uang keluar pembeliannya (jangan dijumlahkan dua kali).',
+  en:'  Note: stock usage from the shopping categories Medicine Spend, Grooming Spend, and Grocery Spend is automatically counted under the types Health, Personal Care, and Food & Drink (COGS value when stock is used, not when bought). So the type figures above already include that stock usage, and "Item purchases by category" below still shows the cash spent on buying it (do not add them twice).'
 };
 AI_METODE.danaDaruratDef = {
   id:'  Dana darurat sudah dikurangi saldo mengendap, dana titipan aktif, dan dana target tabungan aktif di rekening itu (rekening hybrid: hanya kantong tabungannya). Jumlah bulan dihitung terhadap pengeluaran wajib bulanan = rata-rata beban operasional + cicilan hutang bulanan.',
@@ -5725,10 +5772,10 @@ function buildCropper(img, opts, onDone){
   var ratio = round ? 1 : (opts.ratio || 4/3);
   var zoom = 1, ox = 0, oy = 0, cw = 0, ch = 0;
   var ov = document.createElement('div');
-  ov.style.cssText = 'position:fixed; inset:0; z-index:300; background:rgba(3,3,3,0.82); display:flex; align-items:center; justify-content:center; padding:16px;';
+  ov.style.cssText = 'position:fixed; inset:0; z-index:300; background:rgba(3,3,3,0.82); display:flex; align-items:center; justify-content:center; padding:16px; overflow-y:auto;';
   var chips = ratios.length>1 ? '<div id="crp-ratios" style="display:flex; gap:6px; justify-content:center; margin-bottom:12px;">'+ratios.map(function(r){
     return '<button type="button" data-r="'+r[1]+'" style="padding:6px 12px; border-radius:999px; border:1px solid var(--line); background:var(--primary-dim); color:var(--text); font-size:12px; font-weight:700; cursor:pointer;">'+r[0]+'</button>'; }).join('')+'</div>' : '';
-  ov.innerHTML = '<div style="background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:16px; width:100%; max-width:360px; box-shadow:var(--shadow);">'+
+  ov.innerHTML = '<div style="background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:16px; width:100%; max-width:360px; max-height:calc(100vh - 32px); overflow-y:auto; box-shadow:var(--shadow);">'+
     '<div style="font-weight:800; font-size:16px; margin-bottom:4px; text-align:center;">Atur Foto</div>'+
     '<div style="font-size:12px; color:var(--text-2); margin-bottom:12px; text-align:center;">Geser untuk memilih bagian, cubit atau pakai slider untuk zoom</div>'+
     chips+
@@ -9311,9 +9358,11 @@ function buildAiPrompt(){
   var bebanArr = Object.keys(at.map).filter(function(k){ return k.charAt(0)==='5' && at.map[k]>0; }).map(function(k){ var a=akunByKode(k); return {k:(a?a.n:k), v:at.map[k]}; }).sort(function(a,b){ return b.v-a.v; });
   L.push(aiLines({arr:bebanArr, total:beban}, 12));
   var pengBeban = DATA.pengeluaran.filter(function(p){ return akunOfPengeluaran(p).charAt(0)==='5'; });
+  var pengBebanJenis = bebanPerJenis().filter(function(p){ return akunOfPengeluaran(p).charAt(0)==='5'; });
   L.push('');
   L.push(Q('## Pengeluaran umum per jenis (hanya yang jadi beban)','## General expenses by type (expenses only)'));
-  L.push(aiLines(aiGroup(pengBeban,function(x){return x.jenis;},s,e),12));
+  L.push(aiLines(aiGroup(pengBebanJenis,function(x){return x.jenis;},s,e),12));
+  L.push(aiMetode('belanjaKeJenis'));
   L.push('');
   L.push(Q('## Tagihan per jenis (dihitung sebagai beban sesuai tanggal tagihan, walau belum dibayar)','## Bills by type (counted as expenses by bill date, even if unpaid)'));
   L.push(aiLines(aiGroup(DATA.tagihan,function(x){return x.jenis;},s,e),6));
@@ -9658,6 +9707,7 @@ var AI_METODE_PETA = {
   akunOfPengeluaran:['bebanDef','asetStokBukanBoros','investasiPindah'],
   akunOfTagihan:['bebanDef','tagihanBasis'],
   akunOfBelanja:['asetStokBukanBoros'],
+  bebanPerJenis:['belanjaKeJenis'], kategoriItemBelanja:['belanjaKeJenis'],
   akunAutoJenis:['bebanDef'],
   isPemasukanNonRutin:['nonRutinPenuh'],
   PEMASUKAN_NON_RUTIN_RE:['nonRutinPenuh'],
@@ -14995,7 +15045,7 @@ function rekeningBlockHtml(a, isChild){
     '<div class="field" style="margin-bottom:8px;"><label>Label / Nama Panggilan (opsional)</label>'+
       '<input type="text" class="rek-label-input" data-account="'+escapeHtml(a)+'" placeholder="'+(isChild?'cth: Buat Belanja, Tabungan':'cth: Utama, Pribadi')+'" value="'+escapeHtml(info.label||'')+'" maxlength="24"></div>'+
     '<div class="field" style="margin-bottom:8px;"><label>Saldo Awal</label>'+
-      '<input type="text" inputmode="numeric" class="money-input saldo-awal-input" data-account="'+escapeHtml(a)+'" value="'+formatMoneyValue(DATA.saldoAwal[a]||0)+'"></div>'+
+      '<input type="text" inputmode="text" class="money-input money-neg saldo-awal-input" data-account="'+escapeHtml(a)+'" placeholder="cth: -150.000 kalau saldo minus" value="'+formatMoneyValue(DATA.saldoAwal[a]||0, true)+'"></div>'+
     (isBank ? (
     '<div class="field" style="margin-bottom:8px;"><label>Saldo Mengendap (minimal, tidak bisa diambil)</label>'+
       '<input type="text" inputmode="numeric" class="money-input rek-mengendap-input" data-account="'+escapeHtml(a)+'" value="'+formatMoneyValue((info.saldoMengendap)||0)+'"></div>'
@@ -15047,7 +15097,7 @@ function renderPengaturan(){
   el.innerHTML = html;
   el.querySelectorAll('.saldo-awal-input').forEach(function(inp){
     inp.addEventListener('change', function(){
-      DATA.saldoAwal[inp.getAttribute('data-account')] = parseMoneyValue(inp.value) || 0;
+      DATA.saldoAwal[inp.getAttribute('data-account')] = parseMoneyValue(inp.value, true) || 0;
       saveData();
       toast('Saldo awal diperbarui');
     });
@@ -15269,7 +15319,7 @@ function generateInsights(year){
 
   /* --- 3. Top 3 kategori pengeluaran (hanya yang jadi beban; persentase terhadap total beban pengeluaran umum) --- */
   var katMap = {}, katTot = 0;
-  DATA.pengeluaran.forEach(function(p){
+  bebanPerJenis().forEach(function(p){
     if(p.tanggal<start || p.tanggal>end || akunOfPengeluaran(p).charAt(0)!=='5') return;
     var kk = p.jenis||'Lainnya'; katMap[kk] = (katMap[kk]||0)+(p.jumlah||0); katTot += (p.jumlah||0);
   });
@@ -15436,7 +15486,7 @@ function renderRataRataHarian(){
   var rows = [];
   DATA.jenisPengeluaran.forEach(function(kat){
     var total = 0, firstTgl = null, n = 0, hr = {};
-    DATA.pengeluaran.forEach(function(p){
+    pengeluaranPerJenis().forEach(function(p){
       if(p.jenis===kat && p.tanggal>=startStr && p.tanggal<=endStr){
         total += p.jumlah; n++; hr[p.tanggal] = 1;
         if(!firstTgl || p.tanggal<firstTgl) firstTgl = p.tanggal;
@@ -15445,6 +15495,7 @@ function renderRataRataHarian(){
     if(total>0) rows.push({ label:kat, group:'Pengeluaran', total:total, firstTgl:firstTgl, n:n, hariTrx:Object.keys(hr).length });
   });
   DATA.kategoriBelanja.forEach(function(kat){
+    if(BELANJA_KE_JENIS[kat] && (DATA.jenisPengeluaran||[]).indexOf(BELANJA_KE_JENIS[kat])>-1) return; /* sudah dihitung di jenis pengeluaran */
     var total = 0, firstTgl = null, n = 0, hr = {};
     DATA.belanja.forEach(function(b){
       if(b.kategori===kat && b.tanggal>=startStr && b.tanggal<=endStr){
@@ -16230,7 +16281,7 @@ function exportLaporanPDF(){
 
   /* Dataset bulanan buat semua grafik tambahan di laporan PDF (rentang sesuai filter tanggal export) */
   var msPemasukan = monthlyCategorySeries(DATA.pemasukan, function(x){ return x.sumber; }, start, end);
-  var msPengeluaran = monthlyCategorySeries(DATA.pengeluaran, akunJenisKey, start, end);
+  var msPengeluaran = monthlyCategorySeries(pengeluaranPerJenis(), akunJenisKey, start, end);
   var msBelanja = monthlyCategorySeries(DATA.belanja, function(x){ return x.item; }, start, end);
   var msTagihan = monthlyCategorySeries(DATA.tagihan, function(x){ return x.jenis; }, start, end);
   var msInvBeli = monthlyCategorySeries(DATA.invbeli, function(x){ return x.instrumen; }, start, end);
@@ -16244,7 +16295,7 @@ function exportLaporanPDF(){
       '<table>'+rowsFor(DATA.pemasukan,function(x){return x.sumber;},'Sumber')+'</table>'+pendapatanAkunHtml(start, end)+'</div>'+
     '<div class="pr-section"><h2><span class="n">05</span>Pengeluaran per Jenis</h2>'+
       printCatChart(msPengeluaran, 'Total pengeluaran')+
-      '<table>'+rowsFor(DATA.pengeluaran,akunJenisKey,'Jenis')+'</table></div>'+
+      '<table>'+rowsFor(pengeluaranPerJenis(),akunJenisKey,'Jenis')+'</table></div>'+
   '</div>';
 
   html += '<div class="grid2col">'+
@@ -17009,7 +17060,7 @@ function renderGrafik(){
     return { label:kat, color:paletteColor(i, DATA.jenisPengeluaran.length),
       data: labels.map(function(_,mi){
         var start = firstDayStr(year, mi+1), end = lastDayStr(year, mi+1), s=0;
-        DATA.pengeluaran.forEach(function(p){ if(p.jenis===kat && p.tanggal>=start && p.tanggal<=end) s+=p.jumlah; });
+        pengeluaranPerJenis().forEach(function(p){ if(p.jenis===kat && p.tanggal>=start && p.tanggal<=end) s+=p.jumlah; });
         return s;
       }) };
   });
@@ -18969,6 +19020,7 @@ if(document.readyState==='loading'){
   }
   function icon(t,v,opt){
     var B=window.ACCOUNT_BADGE||{}, b=B[t]||B[t.replace(/\s*\(.*\)\s*$/,'').trim()];
+    if(/^My XL\b/.test(t) && typeof window.getAccountBadge==='function'){ try{ b=getAccountBadge('My XL')||b; }catch(_){} }
     var d=document.createElement('span'); d.className='pk-ic'+((b&&b.img)?'':' pk-g');
     var jk=(!b && window.JENIS_ICON && window.ICONS) ? (JENIS_ICON[v]||JENIS_ICON[t]) : null;
     var dic=opt&&opt.getAttribute&&opt.getAttribute('data-ic'); if(dic&&window.ICONS&&ICONS[dic]) jk=dic;
@@ -19042,6 +19094,12 @@ if(document.readyState==='loading'){
     /* Ikuti area yang terlihat (di atas keyboard) supaya sheet tidak tertutup & tinggi stabil saat mengetik */
     var vv=window.visualViewport;
     function fit(){
+      /* Mode Desktop: dialog di tengah layar, ukuran lewat CSS (tinggi visualViewport tidak dipakai karena salah saat halaman di-zoom di HP) */
+      if(document.documentElement.getAttribute('data-layout')==='desktop' || window.innerWidth>=700){
+        ov.style.top=''; ov.style.bottom=''; ov.style.height=''; sh.style.maxHeight='';
+        sh.style.height = q ? 'min(80vh,620px)' : '';
+        return;
+      }
       var h=vv?vv.height:window.innerHeight, top=vv?vv.offsetTop:0;
       ov.style.top=top+'px'; ov.style.bottom='auto'; ov.style.height=h+'px';
       var mh=Math.round(h*(q?0.92:0.8)); if(mh>h-16) mh=h-16;
@@ -21863,6 +21921,435 @@ html[data-theme="light"] #screen-auth .auth-card .btn:not(.ghost){background:lin
   html[data-layout="desktop"] #view-dashboard #db-stok-wrap{order:9;}
   html[data-layout="desktop"] #view-dashboard .grid4{gap:12px;}
   html[data-layout="desktop"] #view-dashboard .grid4 .qa{padding:14px 8px;}
+</style>
+
+<style id="tk-light-v3">
+/* ============ TEMA TERANG v3: tidak lagi abu-abu polos, lebih segar & hidup (mode gelap tidak berubah) ============ */
+html[data-theme="light"]{
+  --bg:#EAF4F1; --surface:#FFFFFF; --line:#D3E4DF;
+  --primary:#0B8579; --primary-2:#0E9F90; --primary-dim:#E0F2EE; --accent:#0B8579; --on-primary:#FFFFFF;
+  --text:#10201D; --text-2:#4B605B;
+  --gold:#0F9D8E; --gold-dim:#DDF1ED; --gold-text:#0B7A6E;
+  --info:#0277BD; --info-dim:#DCEEFA;
+  --input-bg:#F6FBF9; --input-disabled-bg:#E6EFEC;
+  --ghost-bg:#E4F3EF; --ghost-text:#0B6F65; --ghost-border:#B9DAD3;
+  --shadow:0 1px 2px rgba(16,60,52,.07), 0 10px 24px -12px rgba(16,90,78,.28);
+  --lt-mint:#D5F1E8; --lt-peach:#FFE6D3; --lt-sky:#D6EBFA; --lt-rose:#FFDDE2; --lt-violet:#E6DEFF;
+  --lt-violet-fg:#5B3FD6;
+  --tk-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%230F9D8E' stroke-width='2.2' opacity='0.10'%3E%3Ccircle cx='39' cy='46' r='17'/%3E%3Ccircle cx='218' cy='211' r='12'/%3E%3C/g%3E%3Cg fill='%230F9D8E' opacity='0.10' font-family='Arial,sans-serif' font-weight='700'%3E%3Ctext x='39' y='52' font-size='19' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='218' y='216' font-size='13' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3C/g%3E%3Cg fill='%230F9D8E' opacity='0.08'%3E%3Crect x='179' y='62' width='9' height='21' rx='2'/%3E%3Crect x='195' y='47' width='9' height='36' rx='2'/%3E%3Crect x='211' y='29' width='9' height='55' rx='2'/%3E%3C/g%3E%3Cg fill='none' stroke='%230F9D8E' stroke-width='2.2' opacity='0.08'%3E%3Cpath d='M177 39 L224 16'/%3E%3Cpath d='M211 16 L224 16 L224 29'/%3E%3C/g%3E%3Cg fill='none' stroke='%230F9D8E' stroke-width='2.2' opacity='0.10'%3E%3Cellipse cx='72' cy='198' rx='30' ry='21'/%3E%3Ccircle cx='98' cy='195' r='7'/%3E%3Cpath d='M60 179 L66 169 L74 179'/%3E%3Cpath d='M59 178 L75 178'/%3E%3Cline x1='49' y1='216' x2='49' y2='225'/%3E%3Cline x1='88' y1='216' x2='88' y2='225'/%3E%3C/g%3E%3Cg fill='none' stroke='%230F9D8E' stroke-width='2.2' opacity='0.10'%3E%3Ccircle cx='118' cy='36' r='13'/%3E%3Ccircle cx='150' cy='98' r='18'/%3E%3Ccircle cx='30' cy='122' r='14'/%3E%3Ccircle cx='96' cy='110' r='11'/%3E%3Ccircle cx='200' cy='140' r='15'/%3E%3Ccircle cx='245' cy='104' r='10'/%3E%3Ccircle cx='150' cy='216' r='14'/%3E%3Ccircle cx='121' cy='160' r='9'/%3E%3Ccircle cx='12' cy='18' r='9'/%3E%3Ccircle cx='181' cy='182' r='11'/%3E%3Ccircle cx='247' cy='246' r='10'/%3E%3Ccircle cx='58' cy='247' r='9'/%3E%3C/g%3E%3Cg fill='none' stroke='%230F9D8E' stroke-width='1.2' opacity='0.10'%3E%3Ccircle cx='118' cy='36' r='9'/%3E%3Ccircle cx='150' cy='98' r='14'/%3E%3Ccircle cx='30' cy='122' r='10'/%3E%3Ccircle cx='200' cy='140' r='11'/%3E%3Ccircle cx='150' cy='216' r='10'/%3E%3C/g%3E%3Cg fill='%230F9D8E' opacity='0.10' font-family='Arial,sans-serif' font-weight='700'%3E%3Ctext x='118' y='40' font-size='15' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='150' y='104' font-size='20' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='30' y='127' font-size='16' text-anchor='middle'%3E%CE%9E%3C/text%3E%3Ctext x='96' y='114' font-size='12' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='200' y='145' font-size='17' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='245' y='107' font-size='11' text-anchor='middle'%3E%CE%9E%3C/text%3E%3Ctext x='150' y='221' font-size='16' text-anchor='middle'%3E%CE%9E%3C/text%3E%3Ctext x='121' y='163' font-size='10' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='12' y='21' font-size='10' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='181' y='186' font-size='12' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='247' y='249' font-size='11' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3Ctext x='58' y='250' font-size='10' text-anchor='middle'%3E%CE%9E%3C/text%3E%3C/g%3E%3C/svg%3E");
+}
+html[data-theme="light"] body{
+  background:
+    radial-gradient(900px 500px at 8% -5%, rgba(45,212,191,.22), transparent 60%),
+    radial-gradient(800px 520px at 100% 0%, rgba(139,107,255,.14), transparent 60%),
+    radial-gradient(700px 500px at 50% 100%, rgba(90,192,238,.16), transparent 60%),
+    var(--bg);
+  background-attachment:fixed;
+}
+html[data-theme="light"] .card{
+  background:linear-gradient(180deg,#FFFFFF 0%,#F8FCFB 100%);
+  border:1px solid rgba(16,120,105,.14);
+  box-shadow:var(--shadow), inset 0 3px 0 var(--card-accent,#2DD4BF);
+}
+html[data-theme="light"] .card::before{background:#0F9D8E; opacity:.08;}
+/* warna aksen kartu bergantian biar tiap kartu punya karakter */
+html[data-theme="light"] main > .card:nth-of-type(4n+2){--card-accent:#8B6BFF;}
+html[data-theme="light"] main > .card:nth-of-type(4n+3){--card-accent:#5AC0EE;}
+html[data-theme="light"] main > .card:nth-of-type(4n+4){--card-accent:#FF9A62;}
+html[data-theme="light"] .card h3 .dot{background:var(--card-accent,#2DD4BF); box-shadow:0 0 0 4px color-mix(in srgb,var(--card-accent,#2DD4BF) 22%,transparent);}
+/* header */
+html[data-theme="light"] .topbar{background:linear-gradient(135deg,#0B6E66 0%,#0F9D8E 55%,#3FC8B5 100%) !important; box-shadow:0 14px 30px -14px rgba(11,110,102,.65);}
+/* header dashboard (mode terang): kotak diberi jarak dari tepian layar, tidak lagi menempel */
+html[data-theme="light"] #view-dashboard .topbar{margin:calc(env(safe-area-inset-top,0px) + 12px) 14px 0; border-radius:22px; border:1px solid rgba(255,255,255,.28);}
+html[data-theme="light"][data-layout="desktop"] #view-dashboard .topbar{margin:14px 14px 0;}
+/* tombol */
+html[data-theme="light"] .btn:not(.ghost):not(.danger){background:linear-gradient(135deg,#0B8579,#12B3A1); color:#fff; box-shadow:0 8px 18px -8px rgba(11,133,121,.6);}
+html[data-theme="light"] .btn.ghost{background:#E4F3EF; color:#0B6F65; border-color:#B9DAD3;}
+/* input */
+html[data-theme="light"] input, html[data-theme="light"] select, html[data-theme="light"] textarea{background:#F6FBF9; border-color:#C9E0DA;}
+html[data-theme="light"] input:focus, html[data-theme="light"] select:focus, html[data-theme="light"] textarea:focus{border-color:#0F9D8E; box-shadow:0 0 0 3px rgba(15,157,142,.18); outline:none;}
+html[data-theme="light"] input:disabled, html[data-theme="light"] select:disabled{background:#E6EFEC;}
+/* aksi cepat & kartu dashboard */
+html[data-theme="light"] .grid4 .qa, html[data-theme="light"] .qa{background:#FFFFFF; border-color:rgba(16,120,105,.14);}
+html[data-theme="light"] #db-today-btn-keluar{background:linear-gradient(135deg,#FFE3E7,#FFF1F3);}
+html[data-theme="light"] #db-today-btn-masuk{background:linear-gradient(135deg,#D5F4EA,#EEFBF6);}
+html[data-theme="light"] #db-stok-wrap{background:linear-gradient(135deg,#FFE3E7,#FFF4F5);}
+html[data-theme="light"] #db-reminder-wrap{background:linear-gradient(135deg,#FFE9D9,#FFF6EF);}
+html[data-theme="light"] #db-insight-card{background:linear-gradient(135deg,#E9E1FF,#F6F3FF);}
+html[data-theme="light"] #db-health-card{background:linear-gradient(135deg,#D5F4EA,#F0FBF7);}
+/* nav bawah */
+html[data-theme="light"] nav{background:rgba(255,255,255,.92); border-color:rgba(16,120,105,.18);}
+html[data-theme="light"] .navbtn.active .ic{background:linear-gradient(135deg,#2DD4BF,#0F9D8E); color:#fff;}
+/* sidebar desktop */
+html[data-theme="light"][data-layout="desktop"] #ff-side{background:linear-gradient(180deg,#FFFFFF 0%,#EAF7F3 100%); border-right-color:#CFE5DF;}
+html[data-theme="light"] #ff-side .ff-pro{background:linear-gradient(135deg,#0B8579,#12B3A1); color:#fff;}
+html[data-theme="light"] #ff-side .ff-item:hover{background:#DDF1ED;}
+html[data-theme="light"] #ff-side .ff-item.active{background:linear-gradient(90deg,#CDEEE6,#E3F6F1); color:#0A5F56; box-shadow:inset 3px 0 0 #0F9D8E;}
+html[data-theme="light"] #ff-side .ff-item.active .ic{color:#0B8579;}
+/* judul halaman: ikon berwarna */
+html[data-theme="light"] .section-title > [data-icon]:first-child{color:#0B8579;}
+
+/* ---- v3b: tombol berwarna (tidak putih semua) ---- */
+html[data-theme="light"] .btn.ghost{background:linear-gradient(135deg,#CDEEE6,#DDF4EE); color:#0A5F56; border:1.5px solid #8CCFC2; font-weight:700; box-shadow:0 4px 10px -6px rgba(15,157,142,.5);}
+html[data-theme="light"] .btn.ghost:hover{background:linear-gradient(135deg,#B9E8DD,#CDEEE6);}
+html[data-theme="light"] .btn.danger{background:linear-gradient(135deg,#E0384F,#F0667A); color:#fff;}
+html[data-theme="light"] .toggle{background:#E3F2EE; color:#0B6F65; border:1px solid #C3E0D9; font-weight:700;}
+html[data-theme="light"] .toggle.active{background:linear-gradient(135deg,#0B8579,#12B3A1); color:#fff; border-color:transparent; box-shadow:0 6px 14px -6px rgba(11,133,121,.65);}
+html[data-theme="light"] .fx-ind{background:linear-gradient(135deg,#0B8579,#12B3A1);}
+html[data-theme="light"] .fx-on .fx-seg.fx-ready .toggle.active{background:transparent; box-shadow:none;}
+html[data-theme="light"] .cic-btn{background:linear-gradient(135deg,#0B8579,#12B3A1); color:#fff; border-color:transparent; box-shadow:0 5px 12px -6px rgba(11,133,121,.7);}
+html[data-theme="light"] .maps-chip{background:#D6EBFA; color:#0369A1;}
+html[data-theme="light"] .icon-btn{background:#DDF1ED; color:#0B7A6E;}
+html[data-theme="light"] .icon-btn.struk{background:#D6EBFA; color:#0369A1; box-shadow:none;}
+html[data-theme="light"] .icon-btn.del{background:#FFDDE2; color:#C7233A;}
+html[data-theme="light"] .confirm{background:linear-gradient(135deg,#0B8579,#12B3A1); color:#fff;}
+html[data-theme="light"] .qa:nth-child(1) .ic, html[data-theme="light"] .qa:nth-child(2) .ic{color:#fff;}
+
+/* ---- v3c: hasil audit ---- */
+html[data-theme="light"] input.ap-sw{background:#B8CFCA; border:none !important;}
+html[data-theme="light"] input.ap-sw:checked{background:linear-gradient(135deg,#0B8579,#12B3A1);}
+html[data-theme="light"] .ap-btn{background:linear-gradient(135deg,#E3F6F1,#CDEEE6); color:#0A5F56; border-color:#8CCFC2;}
+html[data-theme="light"] input[type=checkbox], html[data-theme="light"] input[type=radio]{accent-color:#0B8579;}
+
+/* ---- v3d: field sedikit lebih berwarna ---- */
+html[data-theme="light"] input, html[data-theme="light"] select, html[data-theme="light"] textarea{background:#EAF7F3; border-color:#BCDDD5;}
+
+/* ---- v3e: tidak ada lagi permukaan putih polos (kartu, tile, nav, dialog, keypad PIN, sidebar) ---- */
+html[data-theme="light"]{ --bg:#D9E9E4; --surface:#EAF4F1; --line:#BFD9D1; --primary-dim:#D4ECE6; }
+html[data-theme="light"] .card{background:linear-gradient(180deg,#EEF7F4 0%,#E0EFEA 100%); border-color:rgba(16,120,105,.22);}
+html[data-theme="light"] .grid4 .qa, html[data-theme="light"] .qa{background:linear-gradient(180deg,#E3F3EE,#D2E9E2); border-color:rgba(16,120,105,.24);}
+html[data-theme="light"] nav{background:rgba(205,230,223,.95); border-color:rgba(16,120,105,.28);}
+html[data-theme="light"] .modal-box, html[data-theme="light"] .acc-card{background:linear-gradient(180deg,#EEF7F4,#DFEEE9);}
+html[data-theme="light"] .key:not(.empty):not(.del):not(.bio){background:linear-gradient(180deg,#E3F3EE,#CFE7E0); border-color:#A9D1C7;}
+html[data-theme="light"][data-layout="desktop"] #ff-side{background:linear-gradient(180deg,#E6F3EF 0%,#D2E8E1 100%); border-right-color:#B5D5CC;}
+html[data-theme="light"] input, html[data-theme="light"] select, html[data-theme="light"] textarea{background:#F7FCFA; border-color:#A9D1C7;}
+html[data-theme="light"] input:disabled, html[data-theme="light"] select:disabled{background:#D5E6E1;}
+html[data-theme="light"] #db-today-btn-keluar{background:linear-gradient(135deg,#FFD3DA,#FBE3E7);}
+html[data-theme="light"] #db-today-btn-masuk{background:linear-gradient(135deg,#C5EFE0,#DDF6EE);}
+html[data-theme="light"] #db-stok-wrap{background:linear-gradient(135deg,#FFD3DA,#FBE6E9);}
+html[data-theme="light"] #db-reminder-wrap{background:linear-gradient(135deg,#FFDCC4,#FCEBDD);}
+html[data-theme="light"] #db-insight-card{background:linear-gradient(135deg,#DCD0FF,#EEE8FF);}
+html[data-theme="light"] #db-health-card{background:linear-gradient(135deg,#C5EFE0,#E2F6EF);}
+
+/* ---- v3f: sisa putih (chip, track bar, ringkasan, badge Untuk di Titipan, pratinjau foto) ---- */
+html[data-theme="light"]{ --input-bg:#D8EBE5; --ghost-bg:#CFE8E0; }
+html[data-theme="light"] .rc-card, html[data-theme="light"] .stk-chip, html[data-theme="light"] .ks-rows{background:#D8EBE5;}
+html[data-theme="light"] .badge{background:#C9E6DE; color:#0A5F56;}
+html[data-theme="light"] .badge[style*="rgba(255,255,255"]{background:#E1E9F5 !important; color:#3B4F73 !important;}
+html[data-theme="light"] .budget-bar-track, html[data-theme="light"] .cic-bar, html[data-theme="light"] .nw-bar, html[data-theme="light"] .ks-comp, html[data-theme="light"] .ks-bar{background:#BCD8CF;}
+html[data-theme="light"] .pk-it{background:rgba(16,120,105,.10); border-color:rgba(16,120,105,.20);}
+html[data-theme="light"] .pk-search{background:#F7FCFA;}
+
+/* ---- v3g: halaman Catat Transaksi (mode terang): kotak berwarna per fitur, lebih pendek, ada keterangan ---- */
+html[data-theme="light"] #view-catat .catat-grid .qa{
+  --t1:#D8ECE6; --t2:#C6E2DA; --a:#0F9D8E;
+  aspect-ratio:auto; min-height:108px; justify-content:center; padding:12px 6px 10px;
+  background:linear-gradient(160deg,var(--t1),var(--t2));
+  border:1px solid color-mix(in srgb,var(--a) 30%,transparent);
+  box-shadow:0 8px 16px -10px color-mix(in srgb,var(--a) 75%,transparent), inset 0 3px 0 var(--a);
+}
+html[data-theme="light"] #view-catat .catat-grid .qa .ic{width:min(40px,44%); margin:0 0 7px; box-shadow:0 0 0 4px color-mix(in srgb,var(--a) 22%,transparent), 0 6px 12px -6px color-mix(in srgb,var(--a) 70%,transparent);}
+html[data-theme="light"] #view-catat .catat-grid .qa .ic::after{display:none;}
+html[data-theme="light"] #view-catat .catat-grid .qa .lb{min-height:0; display:block; font-size:12px; line-height:1.25; color:var(--text);}
+html[data-theme="light"] #view-catat .catat-grid .qa .lb::after{display:block; margin-top:3px; font-size:9.5px; font-weight:500; line-height:1.25; color:var(--text-2);}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="transfer"]{--t1:#DCE7FF; --t2:#C9DAFF; --a:#4F7DFF;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="masuk"]{--t1:#CBF3E6; --t2:#B3EBD9; --a:#19B894;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="keluar"]{--t1:#FFDADE; --t2:#FFC6CD; --a:#E14B54;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="untuk-orang"]{--t1:#FFDDD8; --t2:#FBCBC4; --a:#E8837A;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="belanja"]{--t1:#E5DDFF; --t2:#D4C8FF; --a:#7B5CFA;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="tagihan"]{--t1:#FFE1D3; --t2:#FFCEB8; --a:#FF7A59;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="recurring"]{--t1:#FFD6DE; --t2:#FAC2CE; --a:#D6455F;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="piutang"]{--t1:#C9F0EC; --t2:#B1E6E0; --a:#1C9E97;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="hutang"]{--t1:#C2EBE2; --t2:#AEE1D6; --a:#0F9D8E;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="titipan"]{--t1:#F8D8E8; --t2:#F1C3D8; --a:#B84A7C;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="splitbill"]{--t1:#D6E2EF; --t2:#C5D5E7; --a:#5B7A99;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-beli"]{--t1:#DADEFF; --t2:#C9CFFF; --a:#5C6BFA;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-jual"]{--t1:#FFE6CB; --t2:#FFD7AD; --a:#F2994A;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="goals"]{--t1:#EDDFCB; --t2:#E1CEB2; --a:#A67C52;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="patungan"]{--t1:#DED4FA; --t2:#D0C2F6; --a:#7048E8;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="kesehatan"]{--t1:#FFD4E3; --t2:#FAC1D6; --a:#E0457B;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="stok-barang"]{--t1:#C8EBDB; --t2:#B2E0CC; --a:#189B67;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="inventaris"]{--t1:#CCE7ED; --t2:#B7DBE4; --a:#3E8E9E;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="asetbio"]{--t1:#D4EBD6; --t2:#C0E0C3; --a:#3FA34D;}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="transfer"] .lb::after{content:"Pindah antar rekening";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="masuk"] .lb::after{content:"Gaji & uang masuk";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="keluar"] .lb::after{content:"Catat uang keluar";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="untuk-orang"] .lb::after{content:"Bayarin orang lain";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="belanja"] .lb::after{content:"Belanja & stok";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="tagihan"] .lb::after{content:"Listrik, internet, dll";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="recurring"] .lb::after{content:"Otomatis berkala";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="piutang"] .lb::after{content:"Uang yang dipinjam orang";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="hutang"] .lb::after{content:"Uang yang kamu pinjam";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="titipan"] .lb::after{content:"Dana milik orang lain";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="splitbill"] .lb::after{content:"Bagi tagihan";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-beli"] .lb::after{content:"Tambah modal";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-jual"] .lb::after{content:"Cairkan investasi";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="goals"] .lb::after{content:"Tabung untuk tujuan";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="patungan"] .lb::after{content:"Urunan bersama";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="kesehatan"] .lb::after{content:"Skor keuangan";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="stok-barang"] .lb::after{content:"Cek sisa stok";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="inventaris"] .lb::after{content:"Barang & aset";}
+html[data-theme="light"] #view-catat .catat-grid .qa[data-goto="asetbio"] .lb::after{content:"Ternak & kebun";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="transfer"] .lb::after{content:"Move between accounts";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="masuk"] .lb::after{content:"Salary & income";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="keluar"] .lb::after{content:"Log your spending";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="untuk-orang"] .lb::after{content:"Paid for others";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="belanja"] .lb::after{content:"Shopping & stock";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="tagihan"] .lb::after{content:"Bills & utilities";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="recurring"] .lb::after{content:"Auto recurring";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="piutang"] .lb::after{content:"Money you lent";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="hutang"] .lb::after{content:"Money you owe";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="titipan"] .lb::after{content:"Funds held for others";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="splitbill"] .lb::after{content:"Split the bill";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-beli"] .lb::after{content:"Add investment";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="investasi-jual"] .lb::after{content:"Cash out";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="goals"] .lb::after{content:"Save for a goal";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="patungan"] .lb::after{content:"Group pooling";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="kesehatan"] .lb::after{content:"Financial score";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="stok-barang"] .lb::after{content:"Check stock";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="inventaris"] .lb::after{content:"Items & assets";}
+html[lang="en"][data-theme="light"] #view-catat .catat-grid .qa[data-goto="asetbio"] .lb::after{content:"Livestock & crops";}
+
+/* ---- v3h: semua halaman/tab dapat warna tema sendiri (mode terang) ---- */
+html[data-theme="light"] #view-riwayat{--vc:#8B6BFF; --vcd:#5B3FD6;}
+html[data-theme="light"] #view-mutasi-rekening{--vc:#0F9D8E; --vcd:#0A5F56;}
+html[data-theme="light"] #view-transfer{--vc:#4F7DFF; --vcd:#2F55C9;}
+html[data-theme="light"] #view-masuk{--vc:#19B894; --vcd:#0B7A6E;}
+html[data-theme="light"] #view-keluar{--vc:#E14B54; --vcd:#B3303A;}
+html[data-theme="light"] #view-untuk-orang{--vc:#E8837A; --vcd:#B8514A;}
+html[data-theme="light"] #view-piutang{--vc:#1C9E97; --vcd:#0F6F69;}
+html[data-theme="light"] #view-hutang{--vc:#F2994A; --vcd:#B4631A;}
+html[data-theme="light"] #view-titipan{--vc:#B84A7C; --vcd:#8A2F58;}
+html[data-theme="light"] #view-belanja{--vc:#7B5CFA; --vcd:#4F36C9;}
+html[data-theme="light"] #view-stok-barang{--vc:#189B67; --vcd:#0E6B46;}
+html[data-theme="light"] #view-investasi-beli{--vc:#5C6BFA; --vcd:#3743C4;}
+html[data-theme="light"] #view-investasi-jual{--vc:#E58A2B; --vcd:#A35A12;}
+html[data-theme="light"] #view-tagihan{--vc:#FF7A59; --vcd:#C24A2A;}
+html[data-theme="light"] #view-splitbill{--vc:#5B7A99; --vcd:#3C5873;}
+html[data-theme="light"] #view-kesehatan{--vc:#E0457B; --vcd:#A82857;}
+html[data-theme="light"] #view-laporan{--vc:#2DD4BF; --vcd:#0B7A6E;}
+html[data-theme="light"] #view-grafik{--vc:#5AC0EE; --vcd:#0369A1;}
+html[data-theme="light"] #view-pengaturan{--vc:#5AC0EE; --vcd:#0369A1;}
+html[data-theme="light"] #view-riwayat-update{--vc:#8B6BFF; --vcd:#5B3FD6;}
+html[data-theme="light"] #view-analisis-ai{--vc:#7048E8; --vcd:#4B2BB5;}
+html[data-theme="light"] #view-rekonsiliasi{--vc:#1C9E97; --vcd:#0F6F69;}
+html[data-theme="light"] #view-sampah{--vc:#D6455F; --vcd:#9E2840;}
+html[data-theme="light"] #view-edit-saldo-awal{--vc:#19B894; --vcd:#0B7A6E;}
+html[data-theme="light"] #view-atur-budget{--vc:#F2994A; --vcd:#B4631A;}
+html[data-theme="light"] #view-kelola-kategori{--vc:#3E8E9E; --vcd:#256474;}
+html[data-theme="light"] #view-coa{--vc:#5C6BFA; --vcd:#3743C4;}
+html[data-theme="light"] #view-patungan{--vc:#7048E8; --vcd:#4B2BB5;}
+html[data-theme="light"] #view-goals{--vc:#C48A3F; --vcd:#7A5320;}
+html[data-theme="light"] #view-recurring{--vc:#D6455F; --vcd:#9E2840;}
+html[data-theme="light"] #view-inventaris{--vc:#3E8E9E; --vcd:#256474;}
+html[data-theme="light"] #view-inventaris-detail{--vc:#3E8E9E; --vcd:#256474;}
+html[data-theme="light"] #view-asetbio{--vc:#3FA34D; --vcd:#27712F;}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget){background:radial-gradient(560px 280px at 50% 0%,color-mix(in srgb,var(--vc,#0F9D8E) 18%,transparent),transparent 72%);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) main > .section-title{padding:11px 14px; margin:2px 0 14px; border-radius:16px; color:var(--vcd,#0A5F56); background:linear-gradient(135deg,color-mix(in srgb,var(--vc,#0F9D8E) 24%,#fff),color-mix(in srgb,var(--vc,#0F9D8E) 8%,#fff)); border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 34%,transparent); box-shadow:0 10px 18px -14px var(--vc,#0F9D8E);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) main > .section-title > [data-icon]:first-child{width:32px; height:32px; border-radius:11px; flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; background:var(--vc,#0F9D8E); color:#fff !important; box-shadow:0 6px 12px -6px var(--vc,#0F9D8E);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) main > .section-title > [data-icon]:first-child svg{width:17px; height:17px; color:#fff !important;}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .card:not(.goal-card){--card-accent:var(--vc,#2DD4BF); box-shadow:var(--shadow), inset 0 3px 0 var(--vc,#2DD4BF);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .card h3{color:var(--vcd,inherit);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .card h3 .dot{background:var(--vc,#2DD4BF); box-shadow:0 0 0 4px color-mix(in srgb,var(--vc,#2DD4BF) 24%,transparent);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .btn:not(.ghost):not(.danger){background:linear-gradient(135deg,var(--vcd,#0B8579),var(--vc,#12B3A1)); color:#fff; box-shadow:0 8px 18px -8px var(--vc,#0B8579);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .btn.ghost{background:color-mix(in srgb,var(--vc,#0F9D8E) 16%,#fff); color:var(--vcd,#0A5F56); border:1.5px solid color-mix(in srgb,var(--vc,#0F9D8E) 45%,transparent);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .toggle{background:color-mix(in srgb,var(--vc,#0F9D8E) 14%,#fff); color:var(--vcd,#0B6F65); border-color:color-mix(in srgb,var(--vc,#0F9D8E) 30%,transparent);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .toggle.active{background:linear-gradient(135deg,var(--vcd,#0B8579),var(--vc,#12B3A1)); color:#fff; box-shadow:0 6px 14px -6px var(--vc,#0B8579);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) input:focus, html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) select:focus, html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) textarea:focus{border-color:var(--vc,#0F9D8E); box-shadow:0 0 0 3px color-mix(in srgb,var(--vc,#0F9D8E) 24%,transparent);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .back-row{display:inline-flex; padding:6px 13px 6px 9px; border-radius:999px; background:color-mix(in srgb,var(--vc,#0F9D8E) 16%,#fff); color:var(--vcd,#0A5F56); font-weight:700;}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .txn-row.v2{padding:12px; margin-bottom:9px; border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 26%,transparent); border-left:4px solid var(--vc,#0F9D8E); border-radius:14px; background:linear-gradient(135deg,color-mix(in srgb,var(--vc,#0F9D8E) 12%,#fff),color-mix(in srgb,var(--vc,#0F9D8E) 4%,#fff));}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .txn-row:not(.v2){padding:11px 12px; margin-bottom:8px; border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 22%,transparent); border-radius:14px; background:color-mix(in srgb,var(--vc,#0F9D8E) 7%,#fff);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .menu-row{padding:11px 12px; margin-bottom:7px; border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 24%,transparent); border-radius:14px; background:color-mix(in srgb,var(--vc,#0F9D8E) 8%,#fff);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .acc-row{padding:10px 12px; margin-bottom:7px; border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 20%,transparent); border-radius:12px; background:color-mix(in srgb,var(--vc,#0F9D8E) 6%,#fff);}
+html[data-theme="light"] .view:not(#view-dashboard):not(#view-catat):not(#view-widget) .item-filter-box{padding:12px; border-radius:14px; background:color-mix(in srgb,var(--vc,#0F9D8E) 10%,#fff); border:1px solid color-mix(in srgb,var(--vc,#0F9D8E) 26%,transparent);}
+</style>
+
+<style id="tk-form-grid">
+/* ============ Tata letak form desktop: grid rapi (baris sejajar), otomatis 1 kolom kalau kartu sempit ============ */
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field){
+  display:grid; column-count:auto; grid-template-columns:repeat(auto-fit,minmax(175px,1fr)); column-gap:14px; row-gap:0; align-items:start;
+}
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > .field{margin-bottom:14px; min-width:0;}
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > :not(.field),
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > .field:has(.toggle-row, textarea, #tf-tt-wrap, .hint, .money-row, .seg){grid-column:1 / -1;}
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > .btn{width:100%; margin:2px 0 0;}
+/* judul kartu & hero: lebih lega */
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .hero-card{padding:18px 18px 20px;}
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .hero-card .hero-sub{max-width:100%;}
+/* kolom kiri/kanan: kalau layar sempit (<760px) susun atas-bawah saja */
+
+/* pembungkus field (mis. Untuk + Jenis Pengeluaran) ikut grid 2 kolom otomatis */
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > div:not(.field):has(> .field){display:grid; grid-template-columns:repeat(auto-fit,minmax(175px,1fr)); column-gap:14px;}
+html[data-layout="desktop"] .view:not(#view-dashboard):not(#view-riwayat):not(#view-catat):not(#view-laporan):not(#view-pengaturan) .card:has(> .field) > div:not(.field):has(> .field) > .field{min-width:0;}
+html[data-layout="desktop"] #view-goals .field:has(#goal-jenis){grid-column:1 / -1;}
+@media (max-width:760px){
+  html[data-layout="desktop"] .dk-body, html[data-layout="desktop"] .dk-body.dk-narrow, html[data-layout="desktop"] .dk-body.dk-even{grid-template-columns:minmax(0,1fr);}
+  html[data-layout="desktop"] .dk-left.dk-stick{position:static;}
+}
+</style>
+<style id="tk-datepicker-css">
+.dp-ov{position:fixed;inset:0;z-index:320;background:rgba(5,5,5,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .22s}
+.dp-ov.on{opacity:1}
+.dp-sheet{width:100%;max-width:520px;max-height:92dvh;overflow:auto;background:var(--surface,#fff);color:var(--text,#111);border-radius:28px 28px 0 0;border:1px solid var(--line,rgba(127,127,127,.2));border-bottom:none;box-shadow:0 -14px 50px rgba(0,0,0,.35);padding:10px 20px calc(18px + env(safe-area-inset-bottom));transform:translateY(100%);transition:transform .3s cubic-bezier(.16,1,.3,1);overscroll-behavior:contain}
+.dp-ov.on .dp-sheet{transform:none}
+.dp-grab{width:46px;height:5px;border-radius:5px;background:var(--line,rgba(127,127,127,.35));margin:0 auto 14px}
+.dp-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dp-ttl{flex:1;text-align:center;font-family:var(--font-disp,inherit);font-weight:800;font-size:18px}
+.dp-gear,.dp-done{border:none;background:none;font-family:inherit;cursor:pointer;padding:8px 4px;min-width:64px}
+.dp-gear{color:var(--text-2,#666);font-size:13px;font-weight:700;text-align:left}
+.dp-done{color:var(--primary,#0B8579);font-weight:800;font-size:16px;text-align:right}
+.dp-sub{text-align:center;font-size:12.5px;color:var(--text-2,#777);margin:2px 0 14px}
+.dp-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.dp-nb{width:40px;height:40px;border-radius:50%;border:none;background:transparent;color:var(--text,#111);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.dp-nb:active{background:rgba(127,127,127,.16)}
+.dp-mt{border:none;background:none;font-family:var(--font-disp,inherit);font-weight:800;font-size:17px;color:var(--text,#111);padding:6px 12px;border-radius:12px;cursor:pointer}
+.dp-mt:active{background:rgba(127,127,127,.14)}
+.dp-wd,.dp-grid{display:grid;grid-template-columns:repeat(7,1fr);text-align:center}
+.dp-wd span{font-size:12.5px;font-weight:600;color:var(--text-2,#777);padding:8px 0}
+.dp-d{position:relative;height:46px;display:flex;align-items:center;justify-content:center;border:none;background:none;font-family:inherit;font-size:16px;font-weight:500;color:var(--text,#111);cursor:pointer;padding:0}
+.dp-d i{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;font-style:normal;transition:background .15s,transform .12s}
+.dp-d:active i{transform:scale(.9)}
+.dp-d.out{color:var(--text-2,#888);opacity:.38}
+.dp-d.today i{box-shadow:inset 0 0 0 1.8px var(--primary,#0B8579)}
+.dp-d.sel i{background:var(--primary,#0B8579);color:var(--on-primary,#fff);font-weight:800;box-shadow:0 6px 14px -5px var(--primary,#0B8579)}
+.dp-d.dis{opacity:.2;pointer-events:none}
+.dp-act{display:flex;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line,rgba(127,127,127,.25))}
+.dp-act button{flex:1;padding:12px;border-radius:14px;border:1.5px solid var(--ghost-border,var(--line));background:var(--ghost-bg,transparent);color:var(--ghost-text,var(--primary));font-family:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.dp-mg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0 4px}
+.dp-mg button{padding:14px 0;border-radius:14px;border:none;background:rgba(127,127,127,.1);color:var(--text,#111);font-family:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.dp-mg button.sel{background:var(--primary,#0B8579);color:var(--on-primary,#fff)}
+.dp-mg button.dis{opacity:.25;pointer-events:none}
+/* Mode Desktop: kalender muncul sebagai dialog di tengah layar (bukan sheet dari bawah) */
+html[data-layout="desktop"] .dp-ov{align-items:center;padding:16px}
+html[data-layout="desktop"] .dp-sheet{max-width:400px;border-radius:26px;border-bottom:1px solid var(--line,rgba(127,127,127,.2));padding:16px 22px 20px;transform:translateY(14px) scale(.96);opacity:0;transition:transform .25s cubic-bezier(.16,1,.3,1),opacity .2s;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+html[data-layout="desktop"] .dp-ov.on .dp-sheet{transform:none;opacity:1}
+html[data-layout="desktop"] .dp-grab{display:none}
+html[data-layout="desktop"] .dp-d{height:44px;cursor:pointer}
+html[data-layout="desktop"] .dp-d i{width:40px;height:40px}
+html[data-layout="desktop"] .dp-d:hover:not(.sel):not(.dis) i{background:rgba(127,127,127,.16)}
+html[data-layout="desktop"] .dp-nb:hover,html[data-layout="desktop"] .dp-mt:hover{background:rgba(127,127,127,.14)}
+html[data-layout="desktop"] .dp-mg button:hover:not(.sel){background:rgba(127,127,127,.2)}
+html[data-layout="desktop"] .dp-act button:hover{filter:brightness(.96)}
+@media (min-width:700px){
+  .dp-ov{align-items:center;padding:16px}
+  .dp-sheet{max-width:400px;border-radius:26px;border-bottom:1px solid var(--line,rgba(127,127,127,.2));transform:translateY(14px) scale(.96);opacity:0}
+  .dp-ov.on .dp-sheet{transform:none;opacity:1}
+  .dp-grab{display:none}
+}
+@media (prefers-reduced-motion:reduce){.dp-sheet,.dp-ov{transition:none}}
+</style>
+<script id="tk-datepicker-js">
+/* ============ PEMILIH TANGGAL KUSTOM (bottom sheet kalender, pengganti kalender bawaan HP) ============ */
+(function(){
+  'use strict';
+  function en(){ return !!(window.TKLang && TKLang.get()==='en'); }
+  var MON_ID=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+  var MON_EN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var WD_ID=['Sen','Sel','Rab','Kam','Jum','Sab','Min'], WD_EN=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  function pad(n){ return (n<10?'0':'')+n; }
+  function iso(y,m,d){ return y+'-'+pad(m+1)+'-'+pad(d); }
+  function parse(v){ var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v||''); return m?{y:+m[1],m:+m[2]-1,d:+m[3]}:null; }
+  function today(){ var t=new Date(); return {y:t.getFullYear(),m:t.getMonth(),d:t.getDate()}; }
+  function open(inp){
+    var T=en()?{ttl:'Select Date',done:'Done',sub:'Tap a date, then press Done',now:'Today',clr:'Clear',mon:MON_EN,wd:WD_EN,close:'Close'}
+              :{ttl:'Pilih Tanggal',done:'Selesai',sub:'Ketuk tanggal lalu tekan Selesai',now:'Hari ini',clr:'Hapus',mon:MON_ID,wd:WD_ID,close:'Tutup'};
+    var cur=parse(inp.value), td=today(), sel=cur?{y:cur.y,m:cur.m,d:cur.d}:null;
+    var view={y:(cur||td).y, m:(cur||td).m}, mode='days';
+    var min=inp.min||'', max=inp.max||'';
+    var ov=document.createElement('div'); ov.className='dp-ov';
+    var sh=document.createElement('div'); sh.className='dp-sheet'; ov.appendChild(sh);
+    var closed=false, layer=null;
+    function close(fromPop){ if(closed) return; closed=true; if(!fromPop && layer && window.TKLayer) TKLayer.release(layer); ov.classList.remove('on'); setTimeout(function(){ ov.remove(); },260); try{ inp.blur(); }catch(_){} }
+    function commit(v){
+      if(inp.value!==v){ inp.value=v; inp.dispatchEvent(new Event('input',{bubbles:true})); inp.dispatchEvent(new Event('change',{bubbles:true})); }
+    }
+    function render(){
+      var h='<div class="dp-grab"></div><div class="dp-top"><button type="button" class="dp-gear" data-a="close">'+T.close+'</button><div class="dp-ttl">'+T.ttl+'</div><button type="button" class="dp-done" data-a="done">'+T.done+'</button></div>'+
+        '<div class="dp-sub">'+T.sub+'</div>';
+      if(mode==='days'){
+        h+='<div class="dp-nav"><button type="button" class="dp-nb" data-a="prev" aria-label="prev">&#8249;</button><button type="button" class="dp-mt" data-a="mode">'+T.mon[view.m]+' '+view.y+'</button><button type="button" class="dp-nb" data-a="next" aria-label="next">&#8250;</button></div>';
+        h+='<div class="dp-wd">'+T.wd.map(function(w){ return '<span>'+w+'</span>'; }).join('')+'</div><div class="dp-grid">';
+        var first=new Date(view.y,view.m,1), lead=(first.getDay()+6)%7, dim=new Date(view.y,view.m+1,0).getDate(), prevDim=new Date(view.y,view.m,0).getDate();
+        for(var i=0;i<lead;i++){ var pd=prevDim-lead+1+i, pm=new Date(view.y,view.m-1,pd); h+=cell(pm.getFullYear(),pm.getMonth(),pd,true); }
+        for(var d=1; d<=dim; d++) h+=cell(view.y,view.m,d,false);
+        var total=lead+dim, trail=(7-total%7)%7;
+        for(var k=1;k<=trail;k++){ var nm=new Date(view.y,view.m+1,k); h+=cell(nm.getFullYear(),nm.getMonth(),k,true); }
+        h+='</div>';
+      } else {
+        h+='<div class="dp-nav"><button type="button" class="dp-nb" data-a="py" aria-label="prev year">&#8249;</button><button type="button" class="dp-mt" data-a="mode">'+view.y+'</button><button type="button" class="dp-nb" data-a="ny" aria-label="next year">&#8250;</button></div><div class="dp-mg">';
+        for(var mm=0;mm<12;mm++){
+          var a=iso(view.y,mm,1), b=iso(view.y,mm,28), dis=(max && a>max)||(min && b<min);
+          h+='<button type="button" data-a="m" data-m="'+mm+'" class="'+(sel&&sel.y===view.y&&sel.m===mm?'sel':'')+(dis?' dis':'')+'">'+T.mon[mm].slice(0,3)+'</button>';
+        }
+        h+='</div>';
+      }
+      h+='<div class="dp-act"><button type="button" data-a="today">'+T.now+'</button>'+(inp.required?'':'<button type="button" data-a="clear">'+T.clr+'</button>')+'</div>';
+      sh.innerHTML=h;
+    }
+    function cell(y,m,d,out){
+      var v=iso(y,m,d), cls='dp-d'+(out?' out':'')+(sel&&sel.y===y&&sel.m===m&&sel.d===d?' sel':'')+(td.y===y&&td.m===m&&td.d===d?' today':'')+(((min&&v<min)||(max&&v>max))?' dis':'');
+      return '<button type="button" class="'+cls+'" data-a="day" data-v="'+v+'"><i>'+d+'</i></button>';
+    }
+    sh.addEventListener('click',function(e){
+      var b=e.target.closest('[data-a]'); if(!b) return; var a=b.getAttribute('data-a');
+      if(a==='close') close();
+      else if(a==='done'){ if(sel) commit(iso(sel.y,sel.m,sel.d)); close(); }
+      else if(a==='prev'){ view.m--; if(view.m<0){ view.m=11; view.y--; } render(); }
+      else if(a==='next'){ view.m++; if(view.m>11){ view.m=0; view.y++; } render(); }
+      else if(a==='py'){ view.y--; render(); } else if(a==='ny'){ view.y++; render(); }
+      else if(a==='mode'){ mode=(mode==='days'?'months':'days'); render(); }
+      else if(a==='m'){ view.m=+b.getAttribute('data-m'); mode='days'; render(); }
+      else if(a==='day'){ var p=parse(b.getAttribute('data-v')); sel=p; view={y:p.y,m:p.m}; render(); }
+      else if(a==='today'){ sel={y:td.y,m:td.m,d:td.d}; view={y:td.y,m:td.m}; mode='days'; render(); }
+      else if(a==='clear'){ commit(''); close(); }
+    });
+    ov.addEventListener('click',function(e){ if(e.target===ov) close(); });
+    render(); document.body.appendChild(ov);
+    if(window.TKLayer) layer=TKLayer.open(function(){ close(true); });
+    requestAnimationFrame(function(){ ov.classList.add('on'); });
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){ var po=document.querySelector('.pk-ov.on .pk-x'); if(po){ e.preventDefault(); po.click(); return; } }
+    var ov=document.querySelector('.dp-ov.on'); if(!ov) return;
+    if(e.key==='Escape'){ e.preventDefault(); var x=ov.querySelector('[data-a="close"]'); if(x) x.click(); }
+    else if(e.key==='Enter'){ e.preventDefault(); var d=ov.querySelector('[data-a="done"]'); if(d) d.click(); }
+    else if(e.key==='ArrowLeft' && e.altKey){ var pv=ov.querySelector('[data-a="prev"]'); if(pv) pv.click(); }
+    else if(e.key==='ArrowRight' && e.altKey){ var nx=ov.querySelector('[data-a="next"]'); if(nx) nx.click(); }
+  },true);
+  function target(e){ var i=e.target.closest&&e.target.closest('input[type="date"]'); return (i&&!i.disabled&&!i.readOnly&&!(i.closest&&i.closest('.dp-ov')))?i:null; }
+  document.addEventListener('mousedown',function(e){ if(target(e)) e.preventDefault(); },true);
+  document.addEventListener('click',function(e){ var i=target(e); if(i){ e.preventDefault(); open(i); } },true);
+  document.addEventListener('keydown',function(e){ var i=target(e); if(i && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); open(i); } },true);
+})();
+</script>
+<style id="tk-pk-desktop">
+/* Pemilih pilihan (dropdown berwarna): mode Desktop = dialog di tengah layar */
+html[data-layout="desktop"] .pk-ov{position:fixed;inset:0;align-items:center;padding:16px}
+html[data-layout="desktop"] .pk-sheet{max-width:420px;max-height:min(80vh,640px);border-radius:26px;border-bottom:1px solid var(--line,rgba(127,127,127,.2));transform:translateY(14px) scale(.96);opacity:0;transition:transform .25s cubic-bezier(.16,1,.3,1),opacity .2s;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+html[data-layout="desktop"] .pk-ov.on .pk-sheet{transform:none;opacity:1}
+html[data-layout="desktop"] .pk-head:before{display:none}
+html[data-layout="desktop"] .pk-head{padding-top:16px}
+html[data-layout="desktop"] .pk-it:hover:not(.sel){background:rgba(127,127,127,.18)}
+html[data-layout="desktop"] .pk-x:hover{background:rgba(127,127,127,.3)}
+@media (min-width:700px){
+  .pk-ov{align-items:center;padding:16px}
+  .pk-sheet{max-width:420px;max-height:min(80vh,640px);border-radius:26px;border-bottom:1px solid var(--line,rgba(127,127,127,.2));transform:translateY(14px) scale(.96);opacity:0}
+  .pk-ov.on .pk-sheet{transform:none;opacity:1}
+  .pk-head:before{display:none}
+}
+</style>
+<style id="tk-modal-fit">
+/* Semua dialog: isi yang tinggi bisa di-scroll di dalam kotaknya (tidak terpotong di layar pendek / mode Desktop di HP) */
+.modal-overlay{overflow-y:auto}
+.modal-overlay > *{max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);overflow-y:auto;overscroll-behavior:contain}
+.modal-overlay.show{backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);animation:tkMdIn .2s ease}
+.modal-overlay.show > *{animation:tkMdBox .26s cubic-bezier(.16,1,.3,1)}
+@keyframes tkMdIn{from{opacity:0}to{opacity:1}}
+@keyframes tkMdBox{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+html[data-layout="desktop"] .modal-box{max-width:420px;border-radius:22px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+html[data-layout="desktop"] .modal-actions button:hover{filter:brightness(1.08)}
+html[data-layout="desktop"] #cek-akurasi-overlay > .card,html[data-layout="desktop"] #arsip-overlay > div,html[data-layout="desktop"] #backup-overlay > div{border-radius:22px}
+@media (prefers-reduced-motion:reduce){.modal-overlay.show,.modal-overlay.show > *{animation:none}}
 </style>
 </body>
 </html>
